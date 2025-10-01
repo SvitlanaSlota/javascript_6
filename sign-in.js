@@ -18,8 +18,10 @@ function handleSubmit() {
 
   if (!accessGranted) {
     alert('incorrect login or password');   
+  } else {
+    localStorage.login = user.login;
   }
-
+  
   return accessGranted;
 }
 
